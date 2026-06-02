@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>宝宝囤 Support</title>
+  <title>宝宝囤 StockpileApp Support</title>
   <style>
     body {
       margin: 0;
@@ -25,8 +25,24 @@
       margin-top: 32px;
       font-size: 20px;
     }
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 16px;
+    }
     a {
       color: #c45f2c;
+    }
+    .intro {
+      color: #66564f;
+    }
+    .lang-note {
+      display: inline-flex;
+      margin-top: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #fff0e7;
+      color: #8f4a25;
+      font-size: 13px;
     }
     .card {
       margin-top: 20px;
@@ -39,17 +55,14 @@
 </head>
 <body>
   <main>
-    <h1>宝宝囤 Support</h1>
-    <p>宝宝囤是一款母婴囤货和宝宝日常记录工具，用于管理库存、补货提醒、宝宝档案、疫苗计划和家庭共享。</p>
+    <h1>宝宝囤 StockpileApp Support</h1>
+    <p class="intro">宝宝囤是一款母婴囤货和宝宝日常记录工具，用于管理库存、补货提醒、宝宝档案、疫苗计划和家庭共享。</p>
+    <p class="intro">StockpileApp is a baby inventory and family care record app for managing household stock, restock reminders, baby profiles, lifestyle vaccine reminders, and iCloud family sharing.</p>
+    <p class="lang-note">本页面提供中文和英文支持信息。This page provides support information in Chinese and English.</p>
 
     <div class="card">
-      <h2>联系我们</h2>
+      <h2>联系我们 / Contact Us</h2>
       <p>如需帮助、反馈问题或请求支持，请发送邮件至：</p>
-      <p><a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
-    </div>
-
-    <div class="card">
-      <h2>Support</h2>
       <p>For questions, bug reports, or support requests, contact us at:</p>
       <p><a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
     </div>
@@ -64,6 +77,24 @@
       <p><strong>高级功能：</strong>当前版本高级功能已开放使用，不展示真实购买入口。</p>
       <p><strong>HealthKit / CareKit / NFC：</strong>当前版本不使用 HealthKit、CareKit 或 NFC，也没有外部硬件配对流程。</p>
       <p><strong>远程通知边界：</strong>库存、疫苗、称重等用户提醒均由设备本地通知调度。本 App 不使用自建 APNs 服务端，也不保存 device token；iCloud 同步会使用 Apple CloudKit 所需的系统后台通知。</p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>iCloud sync:</strong> Devices signed in with the same Apple ID can sync automatically through iCloud. Family members using different Apple IDs need to accept an iCloud sharing invitation from the Family page.</p>
+      <p><strong>Notifications:</strong> Please allow StockpileApp notifications in iOS Settings to receive local reminders for inventory, vaccine schedules, baby weight checks, and daily care tasks.</p>
+      <p><strong>Vaccine schedule:</strong> The vaccine schedule is a lifestyle reminder based on the 2021 National Immunization Program schedule published by China's National Health Commission. It is intended as a reference for mainland China only. Actual vaccination timing should follow your local clinic, vaccination record, and doctor's advice. This feature does not use HealthKit or CareKit.</p>
+      <p><strong>Camera and photo library permissions:</strong> Camera access is used only for taking baby profile photos and milestone photos. Photo library access is used only for selecting baby photos, milestone photos, and videos. The current version does not provide a barcode or QR-code item scanning entry.</p>
+      <p><strong>Data safety:</strong> Core app data is stored with Core Data on the device and may sync through Apple CloudKit. E-commerce link import is limited to allowed domains, uses an ephemeral session without cookies, and limits response size. Please do not paste passwords, payment details, ID numbers, or other sensitive information into import text.</p>
+      <p><strong>Premium features:</strong> Premium features are currently open in this review build. The app does not show a real purchase entry in this version.</p>
+      <p><strong>HealthKit / CareKit / NFC:</strong> The current version does not use HealthKit, CareKit, CoreNFC, NFC tags, or any external hardware pairing workflow.</p>
+      <p><strong>Remote notification boundary:</strong> User reminders for inventory, vaccine schedules, weight checks, and summaries are scheduled locally on the device. The app does not operate a custom APNs server and does not store device tokens. iCloud sync may use Apple CloudKit system background notifications required by Apple's CloudKit framework.</p>
+    </div>
+
+    <div class="card">
+      <h2>隐私政策 / Privacy Policy</h2>
+      <p><a href="./privacy-policy.html">查看隐私政策</a></p>
+      <p><a href="./privacy-policy.html">View the Privacy Policy</a></p>
     </div>
   </main>
 </body>
