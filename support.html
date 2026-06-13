@@ -72,9 +72,9 @@
       <p><strong>iCloud 同步：</strong>同一 Apple ID 的设备会自动同步；不同 Apple ID 的家庭成员需要通过家庭页发送 iCloud 共享邀请。</p>
       <p><strong>通知提醒：</strong>请在 iOS 系统设置中允许宝宝囤发送通知，以接收库存、疫苗和称重提醒。</p>
       <p><strong>疫苗计划：</strong>疫苗计划基于国家卫生健康委《国家免疫规划疫苗儿童免疫程序及说明（2021年版）》整理，适用于中国大陆的国家免疫规划生活提醒参考。实际接种请以当地接种门诊、接种证和医生建议为准；本功能不接入 HealthKit 或 CareKit。</p>
-      <p><strong>相机/相册权限：</strong>相机用于拍摄宝宝头像和成长里程碑照片；相册用于选择头像、成长照片和视频。当前版本不提供扫码添加物品入口。</p>
-      <p><strong>数据安全：</strong>核心数据保存在本机 Core Data，并可通过 Apple CloudKit 同步；电商链接导入会限制允许域名、关闭 Cookie，并限制响应大小。</p>
-      <p><strong>高级功能：</strong>当前版本高级功能已开放使用，不展示真实购买入口。</p>
+      <p><strong>相机/相册权限：</strong>相机用于拍摄宝宝头像和成长里程碑照片；相册用于选择头像、成长照片、视频和订单截图。订单截图仅用于本机文字识别导入物品。当前版本不提供扫码添加物品入口。</p>
+      <p><strong>数据安全：</strong>核心数据保存在本机 Core Data，并可通过 Apple CloudKit 同步；电商链接导入会限制允许域名、关闭 Cookie，并限制响应大小；订单截图导入在设备本机识别，不上传到我们的服务器。</p>
+      <p><strong>高级功能：</strong>宝宝囤高级版提供年度自动续期订阅和终身版非消耗型购买。购买后可解锁多宝宝管理、家庭日志、智能补货提醒、成长时间线、月度报告、数据导出和待买清单；同一 Apple ID 可恢复购买。</p>
       <p><strong>HealthKit / CareKit / NFC：</strong>当前版本不使用 HealthKit、CareKit 或 NFC，也没有外部硬件配对流程。</p>
       <p><strong>远程通知边界：</strong>库存、疫苗、称重等用户提醒均由设备本地通知调度。本 App 不使用自建 APNs 服务端，也不保存 device token；iCloud 同步会使用 Apple CloudKit 所需的系统后台通知。</p>
     </div>
@@ -84,9 +84,9 @@
       <p><strong>iCloud sync:</strong> Devices signed in with the same Apple ID can sync automatically through iCloud. Family members using different Apple IDs need to accept an iCloud sharing invitation from the Family page.</p>
       <p><strong>Notifications:</strong> Please allow StockpileApp notifications in iOS Settings to receive local reminders for inventory, vaccine schedules, baby weight checks, and daily care tasks.</p>
       <p><strong>Vaccine schedule:</strong> The vaccine schedule is a lifestyle reminder based on the 2021 National Immunization Program schedule published by China's National Health Commission. It is intended as a reference for mainland China only. Actual vaccination timing should follow your local clinic, vaccination record, and doctor's advice. This feature does not use HealthKit or CareKit.</p>
-      <p><strong>Camera and photo library permissions:</strong> Camera access is used only for taking baby profile photos and milestone photos. Photo library access is used only for selecting baby photos, milestone photos, and videos. The current version does not provide a barcode or QR-code item scanning entry.</p>
-      <p><strong>Data safety:</strong> Core app data is stored with Core Data on the device and may sync through Apple CloudKit. E-commerce link import is limited to allowed domains, uses an ephemeral session without cookies, and limits response size. Please do not paste passwords, payment details, ID numbers, or other sensitive information into import text.</p>
-      <p><strong>Premium features:</strong> Premium features are currently open in this review build. The app does not show a real purchase entry in this version.</p>
+      <p><strong>Camera and photo library permissions:</strong> Camera access is used only for taking baby profile photos and milestone photos. Photo library access is used only for selecting baby photos, milestone photos, videos, and order screenshots. Order screenshots are used for on-device text recognition when importing items. The current version does not provide a barcode or QR-code item scanning entry.</p>
+      <p><strong>Data safety:</strong> Core app data is stored with Core Data on the device and may sync through Apple CloudKit. E-commerce link import is limited to allowed domains, uses an ephemeral session without cookies, and limits response size. Order screenshot import is processed on device and is not uploaded to our servers. Please do not paste or select content containing passwords, payment details, ID numbers, or other sensitive information.</p>
+      <p><strong>Premium features:</strong> Baby Stockpile Premium offers an annual auto-renewable subscription and a lifetime non-consumable purchase. Premium unlocks multiple baby profiles, family logs, smart restock reminders, growth timelines, monthly reports, data export, and shopping lists. Purchases can be restored with the same Apple ID.</p>
       <p><strong>HealthKit / CareKit / NFC:</strong> The current version does not use HealthKit, CareKit, CoreNFC, NFC tags, or any external hardware pairing workflow.</p>
       <p><strong>Remote notification boundary:</strong> User reminders for inventory, vaccine schedules, weight checks, and summaries are scheduled locally on the device. The app does not operate a custom APNs server and does not store device tokens. iCloud sync may use Apple CloudKit system background notifications required by Apple's CloudKit framework.</p>
     </div>
