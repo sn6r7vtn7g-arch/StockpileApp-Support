@@ -17,7 +17,7 @@
 </head>
 <body>
 <h1>StockpileApp Privacy Policy</h1>
-<p class="updated">Last updated: June 13, 2026</p>
+<p class="updated">Last updated: July 9, 2026</p>
 <p class="language-note">This page is provided in English first for App Review and international users. The Chinese version is included below.</p>
 
 <div class="section" lang="en">
@@ -55,36 +55,87 @@
 <ul>
   <li>E-commerce link import is used only to help identify item names, source platforms, and possible quantity information</li>
   <li>Import requests are limited to allowed e-commerce domains, use an ephemeral network session without cookies, and limit response size</li>
-  <li>Order screenshot import uses on-device text recognition to extract item names from images you select; screenshots are not uploaded to our servers</li>
-  <li>Please do not paste or select images containing passwords, payment details, ID numbers, or other sensitive information</li>
+  <li>Order screenshot and photo import use on-device text recognition (OCR) to extract item names, quantities, and expiry dates from images you select; images and recognized text are processed on your device and are not uploaded to our servers</li>
+  <li>PDF and text-file import parse locally; no document content is sent off-device</li>
+  <li>Please do not paste or select images, text, or files containing passwords, payment details, ID numbers, or other sensitive information</li>
 </ul>
 
-<h3>6. Unused System Capabilities</h3>
+<h3>6. Family Sharing Permissions</h3>
+<ul>
+  <li>The family creator (owner) sends an Apple iCloud sharing invitation through the system share sheet (Messages, Mail, AirDrop). Family members join by accepting the invitation and signing in to their own Apple ID</li>
+  <li>Members invited to a family can view shared inventory, baby care records, and reminders by default</li>
+  <li>The owner can adjust the shared scope (which categories of records appear in the shared family) using the Family Sharing Scope card; turning a module off prevents future share preparations from including that module, but already-synced records may remain visible until the owner removes them</li>
+  <li>The owner can stop sharing or delete the family at any time; stopping sharing will revoke the member's access on their next sync and remove shared records from the member's view</li>
+  <li>Members can leave a shared family at any time; leaving the family does not delete records owned by the member on the member's own device</li>
+  <li>Family sharing is governed by Apple's iCloud and CloudKit security; we do not host family data on our own servers</li>
+</ul>
+
+<h3>7. Data Export</h3>
+<ul>
+  <li>You can export your own records (feeding, sleep, diaper, weight, vaccine, solid food, inventory) as CSV or PDF from inside the app</li>
+  <li>Exports are generated on-device and saved or shared through standard iOS share mechanisms you choose</li>
+  <li>Exports do not include other family members' private records; only records you have created or that have been shared with you</li>
+  <li>We do not receive copies of your exports</li>
+</ul>
+
+<h3>8. Unused System Capabilities</h3>
 <ul>
   <li>The app does not use HealthKit or CareKit APIs</li>
   <li>The app does not use NFC and does not require external hardware pairing</li>
   <li>The app does not operate a custom APNs server and does not store device tokens; user reminders are scheduled locally on the device</li>
+  <li>The app does not integrate third-party analytics, advertising, attribution, or social media SDKs</li>
+</ul>
+
+<h3>9. Lifestyle and Health References</h3>
+<ul>
+  <li>Weight, vaccine, feeding, solid food, diaper, and baby care content is used only for lifestyle records, reminders, and general reference</li>
+  <li>The app does not provide medical diagnosis, treatment, or professional medical advice</li>
+  <li>Vaccine schedule data is sourced from official public health authorities (CDC, NHS, China NIP, WHO) and labelled with source and last-reviewed date; the app is a reminder and tracking tool, not an authoritative vaccination record</li>
+  <li>Please consult a doctor, vaccination clinic, or qualified professional when making health-related decisions</li>
+</ul>
+
+<h3>10. Premium Purchases</h3>
+<ul>
+  <li>Premium purchases and subscriptions are processed by Apple through StoreKit and the App Store</li>
+  <li>We do not receive or store your full payment card information</li>
+  <li>Purchase status is used only to unlock premium features on your devices and follows the Apple ID that made the purchase; family data sharing does not automatically share Premium entitlement across Apple IDs</li>
 </ul>
 
 <h2>Data Security</h2>
-<p>Data storage and synchronization rely on Apple's local storage, iCloud, and CloudKit security mechanisms. We do not collect analytics data or crash logs, and we do not share your data with third parties.</p>
+<p>Data storage and synchronization rely on Apple's local storage, iCloud, and CloudKit security mechanisms. We do not collect analytics data or crash logs, and we do not share your data with third parties. All data at rest is protected by Apple's file protection (NSFileProtectionCompleteUntilFirstUserAuthentication).</p>
 
 <h2>Third-Party Services</h2>
-<p>The app does not integrate third-party analytics, advertising, or social media SDKs.</p>
+<p>The app does not integrate third-party analytics, advertising, or social media SDKs. Apple frameworks used: CoreData, CloudKit, StoreKit, UserNotifications, Vision (on-device text recognition), PhotosUI. Each framework is governed by Apple's respective privacy terms.</p>
 
 <h2>Data Deletion</h2>
-<p>You can delete individual data records inside the app at any time. Uninstalling the app removes local app data from the device.</p>
+<p>You can delete individual data records inside the app at any time. In addition:</p>
+<ul>
+  <li><b>Local reset</b>: Settings → Data Management → "Reset Local Data" deletes the Core Data store, App Group preferences, and local caches from this device. iCloud-synced data may still exist in your iCloud account unless separately deleted (see below)</li>
+  <li><b>Family deletion</b>: Family owners can delete a family from the family detail screen. This stops the iCloud share and removes the shared database; private (non-shared) records remain in the owner's iCloud account</li>
+  <li><b>Family membership</b>: Members can leave a shared family. After leaving, records you created remain on your device and in your private iCloud; shared records you received are removed</li>
+  <li><b>App uninstall</b>: Uninstalling the app removes all local app data from the device. iCloud-synced data may persist in your iCloud account until you delete it via Settings → Apple ID → iCloud → Manage Storage → StockpileApp, or by deleting your iCloud account</li>
+  <li><b>Account deletion</b>: To request deletion of all data associated with your Apple ID, contact us at <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>. We will assist you in deleting the CloudKit private database and any App Group storage</li>
+</ul>
+
+<h2>Regional Compliance</h2>
+<p>The app is designed for use by parents and legal guardians. We do not knowingly collect personal information directly from children. Depending on your jurisdiction:</p>
+<ul>
+  <li><b>United States (COPPA)</b>: Baby and child-related data is treated as if collected from a child under 13; the app is intended to be used by parents or guardians, not directly by children</li>
+  <li><b>European Economic Area / United Kingdom (GDPR)</b>: The legal basis for processing baby and family data is the legitimate interest of the parent or guardian who uses the app to manage household inventory and care records. You may request access, correction, or deletion of your data at any time</li>
+  <li><b>Other regions</b>: If your local regulations require specific consent for storing child-related data, please use the app in line with your local requirements and contact us for data deletion requests</li>
+</ul>
 
 <h2>Children's Privacy</h2>
-<p>Baby and child-related data should be entered and managed by parents or legal guardians. We do not knowingly collect personal information directly from children under 14.</p>
+<p>The app is designed to be used by parents or legal guardians, not directly by children under 14. Baby and child-related data should be entered and managed by a parent or legal guardian. We do not knowingly collect personal information directly from children under 14. If you believe a child has provided personal information without parental consent, contact <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a> and we will assist with deletion.</p>
 
 <h2>Contact Us</h2>
-<p>For questions, contact: <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
+<p>For privacy questions, data access requests, or deletion requests, contact: <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
+<p>For support, see the in-app Settings → Help section.</p>
 </div>
 
 <div class="section" lang="zh-Hans">
 <h1>宝宝囤（StockpileApp）隐私政策</h1>
-<p class="updated">最后更新：2026年6月13日</p>
+<p class="updated">最后更新：2026年7月9日</p>
 
 <h2>引言</h2>
 <p>欢迎使用宝宝囤。我们深知个人信息安全的重要性，本政策说明我们如何收集、使用和保护您的信息。</p>
@@ -120,31 +171,82 @@
 <ul>
   <li>电商链接导入仅用于帮助识别物品名称、平台来源和可能的数量信息</li>
   <li>导入请求限制在允许的电商域名，使用不保存 Cookie 的临时网络会话，并限制响应大小</li>
-  <li>订单截图导入使用设备本机文字识别从你选择的图片中提取物品名称，截图不会上传到我们的服务器</li>
-  <li>请不要粘贴或选择包含密码、付款信息、身份证号或其他敏感内容的文本或图片</li>
+  <li>订单截图和照片导入使用设备本机文字识别（OCR）从你选择的图片中提取物品名称、数量和到期日；图片和识别结果在设备上处理，不会上传到我们的服务器</li>
+  <li>PDF 和文本文件导入均在本地解析，不向外部服务器发送文件内容</li>
+  <li>请不要粘贴或选择包含密码、付款信息、身份证号或其他敏感内容的文本、图片或文件</li>
 </ul>
 
-<h3>6. 未使用的系统能力</h3>
+<h3>6. 家庭共享权限</h3>
+<ul>
+  <li>家庭创建者（owner）通过系统分享面板（信息、邮件、隔空投送）发出 Apple iCloud 共享邀请；家庭成员接受邀请并登录自己的 Apple ID 即可加入</li>
+  <li>受邀加入家庭的成员默认可以查看共享的库存、宝宝照护记录和提醒</li>
+  <li>创建者可以通过「家庭共享范围」卡片调整共享范围（哪些类别的记录进入家庭共享）；关闭某个模块后，下次共享准备将不再包含该模块，但已同步的记录可能仍可见，直到创建者手动删除</li>
+  <li>创建者可以随时停止共享或删除家庭；停止共享后，成员的下次同步将撤销访问权限并从其视图移除共享记录</li>
+  <li>成员可以随时退出已加入的家庭；退出家庭不会删除成员自己设备上由该成员创建的记录</li>
+  <li>家庭共享由 Apple 的 iCloud 和 CloudKit 安全机制保障，我们不在自有服务器托管家庭数据</li>
+</ul>
+
+<h3>7. 数据导出</h3>
+<ul>
+  <li>你可以从 App 内导出自己创建的记录（喂养、睡眠、排泄、体重、疫苗、辅食、库存）为 CSV 或 PDF</li>
+  <li>导出内容在设备本地生成，通过 iOS 标准分享机制保存或转发</li>
+  <li>导出内容不包含其他家庭成员的私密记录；仅包含你创建或已与你共享的记录</li>
+  <li>我们不会收到你导出的副本</li>
+</ul>
+
+<h3>8. 未使用的系统能力</h3>
 <ul>
   <li>本 App 不使用 HealthKit 或 CareKit API</li>
   <li>本 App 不使用 NFC，也不需要外部硬件配对</li>
   <li>本 App 不使用自建 APNs 服务端，不保存 device token；用户提醒均由设备本地调度</li>
+  <li>本 App 不集成任何第三方分析、广告、归因或社交媒体 SDK</li>
+</ul>
+
+<h3>9. 生活记录和健康参考</h3>
+<ul>
+  <li>体重、疫苗、喂养、辅食、排泄和照护内容仅用于生活记录、提醒和一般参考</li>
+  <li>本 App 不提供医疗诊断、治疗或专业医疗建议</li>
+  <li>疫苗计划数据来自各国公共卫生权威机构（中国 NIP / 美国 CDC / 英国 NHS / WHO），并标注数据来源和最后核对日期；本 App 是提醒和记录工具，不是权威接种证明</li>
+  <li>涉及健康决策时，请咨询医生、接种门诊或具备资质的专业人员</li>
+</ul>
+
+<h3>10. 高级版购买</h3>
+<ul>
+  <li>高级版购买和订阅由 Apple 通过 StoreKit 和 App Store 处理</li>
+  <li>我们不会接收或保存您的完整付款卡信息</li>
+  <li>购买状态仅用于在你的设备上解锁高级功能，并跟随发起购买的 Apple ID；家庭数据共享不会自动跨 Apple ID 共享高级版权益</li>
 </ul>
 
 <h2>数据安全</h2>
-<p>数据保存和同步依赖 Apple 提供的本地存储、iCloud 和 CloudKit 安全机制。我们不收集分析数据或崩溃日志，不分享数据给任何第三方。</p>
+<p>数据保存和同步依赖 Apple 提供的本地存储、iCloud 和 CloudKit 安全机制。我们不收集分析数据或崩溃日志，不分享数据给任何第三方。所有静态数据由 Apple 的文件保护机制（NSFileProtectionCompleteUntilFirstUserAuthentication）保护。</p>
 
 <h2>第三方服务</h2>
-<p>本 App 不集成任何第三方分析、广告或社交媒体 SDK。</p>
+<p>本 App 不集成任何第三方分析、广告或社交媒体 SDK。使用的 Apple 框架：CoreData、CloudKit、StoreKit、UserNotifications、Vision（设备本机文字识别）、PhotosUI。各框架分别遵循 Apple 的隐私条款。</p>
 
 <h2>数据删除</h2>
-<p>您可在 App 内随时删除单个数据；卸载 App 即可清除设备上的本地 App 数据。</p>
+<p>你可以在 App 内随时删除单个数据记录。除此之外：</p>
+<ul>
+  <li><b>本机重置</b>：设置 → 数据管理 → 「重置本地数据」会删除本设备的 Core Data 存储、App Group 偏好和本地缓存。iCloud 同步的数据仍可能存在于你的 iCloud 账户，除非另行删除（见下）</li>
+  <li><b>删除家庭</b>：家庭创建者可以在家庭详情页删除家庭。这会停止 iCloud 共享并移除共享数据库；私有（非共享）记录保留在创建者的 iCloud 账户</li>
+  <li><b>退出家庭</b>：成员可以随时退出已加入的家庭。退出后，你在自己设备上创建的记录仍保留在你的私有 iCloud；你接收到的共享记录会被移除</li>
+  <li><b>卸载 App</b>：卸载 App 会移除本机的所有 App 数据。iCloud 同步的数据可能仍存在于你的 iCloud 账户，可通过「设置 → Apple ID → iCloud → 管理存储 → StockpileApp」删除，或删除整个 iCloud 账户</li>
+  <li><b>账号删除</b>：如需请求删除与你的 Apple ID 关联的全部数据，请联系 <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>。我们将协助你删除 CloudKit 私有数据库和 App Group 存储</li>
+</ul>
+
+<h2>地区合规</h2>
+<p>本 App 设计供父母或法定监护人使用。我们不有意直接收集儿童的个人信息。根据你所在的司法管辖区：</p>
+<ul>
+  <li><b>美国（COPPA）</b>：宝宝和儿童相关数据被视为 13 岁以下儿童数据；本 App 仅供父母或监护人使用，不直接面向儿童</li>
+  <li><b>欧洲经济区 / 英国（GDPR）</b>：处理宝宝和家庭数据的法律依据是父母或监护人使用本 App 管理家庭库存和照护记录的合法利益。你可随时请求访问、更正或删除你的数据</li>
+  <li><b>其他地区</b>：如果你所在地区的法规对儿童相关数据存储有特定同意要求，请按当地要求使用本 App，并联系我们处理数据删除请求</li>
+</ul>
 
 <h2>儿童隐私</h2>
-<p>儿童相关数据应由父母或法定监护人输入和管理。我们不有意直接收集 14 岁以下儿童的个人信息。</p>
+<p>本 App 设计供父母或监护人使用，不直接面向 14 岁以下儿童。宝宝和儿童相关数据应由父母或法定监护人输入和管理。我们不有意直接收集 14 岁以下儿童的个人信息。如果你认为有儿童在无父母同意的情况下提供了个人信息，请联系 <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>，我们将协助删除。</p>
 
 <h2>联系我们</h2>
-<p>如有问题请联系：<a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
+<p>如有隐私问题、数据访问请求或删除请求，请联系：<a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a></p>
+<p>如需支持，请见 App 内「设置 → 帮助」。</p>
 </div>
 </body>
 </html>
