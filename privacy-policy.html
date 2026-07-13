@@ -17,7 +17,7 @@
 </head>
 <body>
 <h1>StockpileApp Privacy Policy</h1>
-<p class="updated">Last updated: July 9, 2026</p>
+<p class="updated">Last updated: July 13, 2026</p>
 <p class="language-note">This page is provided in English first for App Review and international users. The Chinese version is included below.</p>
 
 <div class="section" lang="en">
@@ -35,7 +35,8 @@
 <h3>2. iCloud Data Sync</h3>
 <ul>
   <li>When iCloud is enabled, data syncs between devices through Apple CloudKit</li>
-  <li>Synced data is stored in your iCloud account or the accepted CloudKit shared database; the developer cannot access your private iCloud data</li>
+  <li>Synced private and shared app data is stored in your iCloud account or the accepted CloudKit shared database; we do not operate our own servers for this data</li>
+  <li>To route family join requests, the app may write limited invite/request metadata to Apple CloudKit Public Database, such as family public identifier, invite-code hash, requester display name, requester user record name, request status, and review time</li>
   <li>Data transfer and storage are protected by Apple's iCloud and CloudKit security mechanisms</li>
 </ul>
 
@@ -102,10 +103,10 @@
 </ul>
 
 <h2>Data Security</h2>
-<p>Data storage and synchronization rely on Apple's local storage, iCloud, and CloudKit security mechanisms. We do not collect analytics data or crash logs, and we do not share your data with third parties. All data at rest is protected by Apple's file protection (NSFileProtectionCompleteUntilFirstUserAuthentication).</p>
+<p>Data storage and synchronization rely on Apple's local storage, iCloud, and CloudKit security mechanisms. The app does not use third-party analytics or advertising SDKs and does not sell your data. The app may store Apple MetricKit performance summaries locally on your device for diagnostics; these summaries are not uploaded to our servers and are only available to support if you choose to share them. All data at rest is protected by Apple's file protection (NSFileProtectionCompleteUntilFirstUserAuthentication).</p>
 
 <h2>Third-Party Services</h2>
-<p>The app does not integrate third-party analytics, advertising, or social media SDKs. Apple frameworks used: CoreData, CloudKit, StoreKit, UserNotifications, Vision (on-device text recognition), PhotosUI. Each framework is governed by Apple's respective privacy terms.</p>
+<p>The app does not integrate third-party analytics, advertising, attribution, or social media SDKs. Apple frameworks used: CoreData, CloudKit, StoreKit, UserNotifications, Vision (on-device text recognition), PhotosUI, and MetricKit. Each framework is governed by Apple's respective privacy terms.</p>
 
 <h2>Data Deletion</h2>
 <p>You can delete individual data records inside the app at any time. In addition:</p>
@@ -114,7 +115,7 @@
   <li><b>Family deletion</b>: Family owners can delete a family from the family detail screen. This stops the iCloud share and removes the shared database; private (non-shared) records remain in the owner's iCloud account</li>
   <li><b>Family membership</b>: Members can leave a shared family. After leaving, records you created remain on your device and in your private iCloud; shared records you received are removed</li>
   <li><b>App uninstall</b>: Uninstalling the app removes all local app data from the device. iCloud-synced data may persist in your iCloud account until you delete it via Settings → Apple ID → iCloud → Manage Storage → StockpileApp, or by deleting your iCloud account</li>
-  <li><b>Account deletion</b>: To request deletion of all data associated with your Apple ID, contact us at <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>. We will assist you in deleting the CloudKit private database and any App Group storage</li>
+  <li><b>Deletion help</b>: To request help deleting app data associated with your Apple ID, contact us at <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>. Because private iCloud data is controlled by your Apple ID, we will guide you through the available in-app and iCloud deletion steps rather than accessing your private database directly</li>
 </ul>
 
 <h2>Regional Compliance</h2>
@@ -135,7 +136,7 @@
 
 <div class="section" lang="zh-Hans">
 <h1>宝宝囤（StockpileApp）隐私政策</h1>
-<p class="updated">最后更新：2026年7月9日</p>
+<p class="updated">最后更新：2026年7月13日</p>
 
 <h2>引言</h2>
 <p>欢迎使用宝宝囤。我们深知个人信息安全的重要性，本政策说明我们如何收集、使用和保护您的信息。</p>
@@ -151,7 +152,8 @@
 <h3>2. iCloud 数据同步</h3>
 <ul>
   <li>启用 iCloud 后，数据通过 Apple CloudKit 在多设备间同步</li>
-  <li>同步数据存储在您的 iCloud 账户或已接受的 CloudKit 共享数据库中，开发者无法访问您的私人 iCloud 数据</li>
+  <li>同步的私有和共享 App 数据存储在你的 iCloud 账户或已接受的 CloudKit 共享数据库中，我们不使用自有服务器托管这些数据</li>
+  <li>为了转发家庭加入申请，App 可能会向 Apple CloudKit Public Database 写入有限的邀请码/申请元数据，例如家庭公开标识、邀请码哈希、申请人显示名称、申请人用户记录名、申请状态和审核时间</li>
   <li>数据传输和存储受 Apple iCloud 与 CloudKit 安全机制保护</li>
 </ul>
 
@@ -218,10 +220,10 @@
 </ul>
 
 <h2>数据安全</h2>
-<p>数据保存和同步依赖 Apple 提供的本地存储、iCloud 和 CloudKit 安全机制。我们不收集分析数据或崩溃日志，不分享数据给任何第三方。所有静态数据由 Apple 的文件保护机制（NSFileProtectionCompleteUntilFirstUserAuthentication）保护。</p>
+<p>数据保存和同步依赖 Apple 提供的本地存储、iCloud 和 CloudKit 安全机制。本 App 不使用第三方分析或广告 SDK，也不会出售你的数据。App 可能会在你的设备本地保存 Apple MetricKit 性能摘要用于诊断；这些摘要不会上传到我们的服务器，只有在你主动选择分享给客服时才会用于支持排查。所有静态数据由 Apple 的文件保护机制（NSFileProtectionCompleteUntilFirstUserAuthentication）保护。</p>
 
 <h2>第三方服务</h2>
-<p>本 App 不集成任何第三方分析、广告或社交媒体 SDK。使用的 Apple 框架：CoreData、CloudKit、StoreKit、UserNotifications、Vision（设备本机文字识别）、PhotosUI。各框架分别遵循 Apple 的隐私条款。</p>
+<p>本 App 不集成任何第三方分析、广告、归因或社交媒体 SDK。使用的 Apple 框架：CoreData、CloudKit、StoreKit、UserNotifications、Vision（设备本机文字识别）、PhotosUI 和 MetricKit。各框架分别遵循 Apple 的隐私条款。</p>
 
 <h2>数据删除</h2>
 <p>你可以在 App 内随时删除单个数据记录。除此之外：</p>
@@ -230,7 +232,7 @@
   <li><b>删除家庭</b>：家庭创建者可以在家庭详情页删除家庭。这会停止 iCloud 共享并移除共享数据库；私有（非共享）记录保留在创建者的 iCloud 账户</li>
   <li><b>退出家庭</b>：成员可以随时退出已加入的家庭。退出后，你在自己设备上创建的记录仍保留在你的私有 iCloud；你接收到的共享记录会被移除</li>
   <li><b>卸载 App</b>：卸载 App 会移除本机的所有 App 数据。iCloud 同步的数据可能仍存在于你的 iCloud 账户，可通过「设置 → Apple ID → iCloud → 管理存储 → StockpileApp」删除，或删除整个 iCloud 账户</li>
-  <li><b>账号删除</b>：如需请求删除与你的 Apple ID 关联的全部数据，请联系 <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>。我们将协助你删除 CloudKit 私有数据库和 App Group 存储</li>
+  <li><b>删除协助</b>：如需请求协助删除与你的 Apple ID 相关的 App 数据，请联系 <a href="mailto:Stockpilebaby@outlook.com">Stockpilebaby@outlook.com</a>。由于 iCloud 私有数据由你的 Apple ID 控制，我们会指导你完成 App 内和 iCloud 中可用的删除步骤，而不是直接访问你的私人数据库</li>
 </ul>
 
 <h2>地区合规</h2>
